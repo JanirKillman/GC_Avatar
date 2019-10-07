@@ -1,0 +1,363 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GC_AVATAR
+</name>
+</assembly>
+<members>
+<member name="T:GC_AVATAR.BETemp.beDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.BETemp.beRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.BETemp.beRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.BETemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.IOTemp.ioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.IOTemp.ioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.IOTemp.ioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.IOTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.CRTemp.crDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.CRTemp.crRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.CRTemp.crRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.CRTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.EVTemp.EDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.EVTemp.ERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.EVTemp.ERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.EVTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.PSTemp.PDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.PSTemp.PRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.PSTemp.PRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.PSTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.VATemp.vaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.VATemp.vaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.VATemp.vaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.VATemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.ATTemp.atDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.ATTemp.atRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.ATTemp.atRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.ATTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.NOTemp.noDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.NOTemp.noRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.NOTemp.noRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.NOTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.SITemp.siDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.SITemp.siRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.SITemp.siRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.SITemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.WETemp.WeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.WETemp.WeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.WETemp.WeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.WETemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.OGTemp.ogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.OGTemp.ogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.OGTemp.ogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.OGTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.RUTemp.ruDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.RUTemp.ruRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.RUTemp.ruRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.RUTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.ARTemp.ArDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.ARTemp.ArRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.ARTemp.ArRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.ARTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.PETemp.peDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.PETemp.peRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.PETemp.peRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.PETemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.WOTemp.woDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.WOTemp.woRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.WOTemp.woRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.WOTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.NATemp.naDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.NATemp.naRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.NATemp.naRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.NATemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.SPTemp.SpDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.SPTemp.SpRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.SPTemp.SpRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.SPTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.ITTemp.IDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.ITTemp.IRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.ITTemp.IRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.ITTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.ELTemp.elDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.ELTemp.elRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.ELTemp.elRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.ELTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.PRTemp.prDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.PRTemp.prRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.PRTemp.prRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.PRTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.LATemp.lDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.LATemp.lRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.LATemp.lRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.LATemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GC_AVATAR.SKTemp.SkDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GC_AVATAR.SKTemp.SkRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GC_AVATAR.SKTemp.SkRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GC_AVATAR.SKTemp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>
