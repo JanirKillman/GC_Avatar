@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="IOTemp" targetNamespace="http://tempuri.org/IOTemp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/IOTemp.xsd" xmlns:mstns="http://tempuri.org/IOTemp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="IOTemp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="io">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:double" minOccurs="0" />
+							<xs:element name="Info_name" type="xs:string" minOccurs="0" />
+							<xs:element name="Infoo" type="xs:string" minOccurs="0" />
+							<xs:element name="Known" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

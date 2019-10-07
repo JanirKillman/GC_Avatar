@@ -1,0 +1,1498 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{505D9C90-2490-4344-96E9-6C4CEBB25B42}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>GC_AVATAR.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>GC_AVATAR</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>GC_AVATAR</RootNamespace>
+    <StartupObject>GC_AVATAR.AVATAR_MAIN</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GC_AVATAR.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>Win32 = True</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GC_AVATAR.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>Win32 = True</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB">
+      <Name>adodb</Name>
+      <HintPath>..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data">
+      <Name>Microsoft.VisualBasic.Compatibility.Data</Name>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.102.2.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="AxComCtl3">
+      <Guid>{38911DA0-E448-11D0-84A3-00DD01104159}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSComCtl2">
+      <Guid>{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSComctlLib">
+      <Guid>{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="ComCtl3">
+      <Guid>{38911DA0-E448-11D0-84A3-00DD01104159}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="DAO">
+      <Guid>{00025E01-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSComCtl2">
+      <Guid>{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSComctlLib">
+      <Guid>{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="StdFormat">
+      <Guid>{6B263850-900B-11D0-9484-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBRUN">
+      <Guid>{EA544A21-C82D-11D1-A3E4-00A0C90AEA82}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>9</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="Oracle" />
+    <Import Include="Oracle.DataAccess" />
+    <Import Include="Oracle.DataAccess.Client" />
+    <Import Include="Oracle.DataAccess.Types" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ARPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ARTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ATPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ATTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AVATAR_MAIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BEPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BETemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BETemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionFactory.vb" />
+    <Compile Include="CRart.vb">
+      <DependentUpon>CRart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRartif.vb">
+      <DependentUpon>CRartif.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRbea.vb">
+      <DependentUpon>CRbea.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRcr.vb">
+      <DependentUpon>CRcr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRele.vb">
+      <DependentUpon>CRele.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRevent.vb">
+      <DependentUpon>CRevent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRinfo.vb">
+      <DependentUpon>CRinfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRitem.vb">
+      <DependentUpon>CRitem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRlan.vb">
+      <DependentUpon>CRlan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRnar.vb">
+      <DependentUpon>CRnar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRnote.vb">
+      <DependentUpon>CRnote.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRorg.vb">
+      <DependentUpon>CRorg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRper.vb">
+      <DependentUpon>CRper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRpric.vb">
+      <DependentUpon>CRpric.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRpsi.vb">
+      <DependentUpon>CRpsi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRrace1.vb">
+      <DependentUpon>CRrace.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRrule.vb">
+      <DependentUpon>CRrule.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRsite.vb">
+      <DependentUpon>CRsite.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRskill.vb">
+      <DependentUpon>CRskill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRspell.vb">
+      <DependentUpon>CRspell.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRvantage.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRvantage.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRweap.vb">
+      <DependentUpon>CRweap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CRwoc.vb">
+      <DependentUpon>CRwoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ELPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ELTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EVPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EVTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EVTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ARsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Art.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Artifacts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ATsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Beasts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BEsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Characters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Chartab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ClassRules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Colors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CRsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Efficiency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EFsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ELCHoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Elements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Events.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EVsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_IOsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ITCHoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ITsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Languages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LAsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_NAsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Nations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_NOsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Notes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OGsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Ordering.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Organizations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PAsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Pass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Passwords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Personel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PEsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Pricelist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PRsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PSI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PSsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Races.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_RAsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rooster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_RUsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SIsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sites.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SKCHoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Skills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SKsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SPCHoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Spells.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SPsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Vantages.Designer.vb">
+      <DependentUpon>Frm_Vantages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Vantages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_VAsez.Designer.vb">
+      <DependentUpon>Frm_VAsez.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_VAsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Waid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Weapons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WECHoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WEsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Wocabulary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WOsez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IOprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IOTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ITTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITTemp.vb">
+      <DependentUpon>ITTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Killman.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LAPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LATemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LATemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MusicModulecls.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="NAPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NATemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NATemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OGPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OGTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OGTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PEPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PETemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PETemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PSprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PSTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PSTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RAPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RUPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RUTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RUTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SIPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SITemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SITemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SKPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SKTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SKTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SortRoutines.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SPPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Standard.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Store.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VAPrint.Designer.vb">
+      <DependentUpon>VAPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VAPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VATemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VATemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WEPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WETemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WETemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WOPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WOTemp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WOTemp.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ARPrint.resx">
+      <DependentUpon>ARPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATPrint.resx">
+      <DependentUpon>ATPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVATAR_MAIN.resX">
+      <DependentUpon>AVATAR_MAIN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BEPrint.resx">
+      <DependentUpon>BEPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRart.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRartif.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRartif.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRbea.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRbea.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRcr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRcr.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRele.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRele.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRevent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRevent.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRinfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRinfo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRitem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRitem.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRlan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRnar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRnar.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRnote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRnote.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRorg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRorg.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRper.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRpric.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRpric.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRPrint.resx">
+      <DependentUpon>CRPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRpsi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRpsi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRrace.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRrace1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRrule.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRrule.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRsite.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRsite.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRskill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRskill.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRspell.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRspell.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRvantage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRvantage.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRweap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRweap.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRwoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRwoc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELPrint.resx">
+      <DependentUpon>ELPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EVPrint.resx">
+      <DependentUpon>EVPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ARsez.resx">
+      <DependentUpon>Frm_ARsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Art.resX">
+      <DependentUpon>Frm_Art.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Artifacts.resX">
+      <DependentUpon>Frm_Artifacts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ATsez.resx">
+      <DependentUpon>Frm_ATsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Beasts.resX">
+      <DependentUpon>Frm_Beasts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BEsez.resx">
+      <DependentUpon>Frm_BEsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Characters.resX">
+      <DependentUpon>Frm_Characters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Chartab.resx">
+      <DependentUpon>Frm_Chartab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ClassRules.resX">
+      <DependentUpon>Frm_ClassRules.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Colors.resx">
+      <DependentUpon>Frm_Colors.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CRsez.resx">
+      <DependentUpon>Frm_CRsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Efficiency.resX">
+      <DependentUpon>Frm_Efficiency.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EFsez.resx">
+      <DependentUpon>Frm_EFsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ELCHoose.resX">
+      <DependentUpon>Frm_ELCHoose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Elements.resX">
+      <DependentUpon>Frm_Elements.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Events.resX">
+      <DependentUpon>Frm_Events.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EVsez.resx">
+      <DependentUpon>Frm_EVsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Info.resX">
+      <DependentUpon>Frm_Info.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_IOsez.resx">
+      <DependentUpon>Frm_IOsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ITCHoose.resX">
+      <DependentUpon>Frm_ITCHoose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Items.resX">
+      <DependentUpon>Frm_Items.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ITsez.resx">
+      <DependentUpon>Frm_ITsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Languages.resX">
+      <DependentUpon>Frm_Languages.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LAsez.resx">
+      <DependentUpon>Frm_LAsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_NAsez.resx">
+      <DependentUpon>Frm_NAsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Nations.resX">
+      <DependentUpon>Frm_Nations.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_NOsez.resx">
+      <DependentUpon>Frm_NOsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Notes.resX">
+      <DependentUpon>Frm_Notes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OGsez.resx">
+      <DependentUpon>Frm_OGsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Ordering.resX">
+      <DependentUpon>Frm_Ordering.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Organizations.resX">
+      <DependentUpon>Frm_Organizations.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PAsez.resx">
+      <DependentUpon>Frm_PAsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Pass.resX">
+      <DependentUpon>Frm_Pass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Passwords.resX">
+      <DependentUpon>Frm_Passwords.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Personel.resX">
+      <DependentUpon>Frm_Personel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PEsez.resx">
+      <DependentUpon>Frm_PEsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Pricelist.resX">
+      <DependentUpon>Frm_Pricelist.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PRsez.resx">
+      <DependentUpon>Frm_PRsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PSI.resX">
+      <DependentUpon>Frm_PSI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PSsez.resx">
+      <DependentUpon>Frm_PSsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Races.resX">
+      <DependentUpon>Frm_Races.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RAsez.resx">
+      <DependentUpon>Frm_RAsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rooster.resx">
+      <DependentUpon>Frm_Rooster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rules.resX">
+      <DependentUpon>Frm_Rules.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RUsez.resx">
+      <DependentUpon>Frm_RUsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SIsez.resx">
+      <DependentUpon>Frm_SIsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sites.resX">
+      <DependentUpon>Frm_Sites.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SKCHoose.resX">
+      <DependentUpon>Frm_SKCHoose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Skills.resX">
+      <DependentUpon>Frm_Skills.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SKsez.resx">
+      <DependentUpon>Frm_SKsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SPCHoose.resX">
+      <DependentUpon>Frm_SPCHoose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Spells.resX">
+      <DependentUpon>Frm_Spells.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SPsez.resx">
+      <DependentUpon>Frm_SPsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Vantages.resx">
+      <DependentUpon>Frm_Vantages.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_VAsez.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_VAsez.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Waid.resx">
+      <DependentUpon>Frm_Waid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Weapons.resX">
+      <DependentUpon>Frm_Weapons.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_WECHoose.resX">
+      <DependentUpon>Frm_WECHoose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_WEsez.resx">
+      <DependentUpon>Frm_WEsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Wocabulary.resX">
+      <DependentUpon>Frm_Wocabulary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_WOsez.resx">
+      <DependentUpon>Frm_WOsez.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOprint.resx">
+      <DependentUpon>IOprint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITPrint.resx">
+      <DependentUpon>ITPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LAPrint.resx">
+      <DependentUpon>LAPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NAPrint.resx">
+      <DependentUpon>NAPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NOPrint.resx">
+      <DependentUpon>NOPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OGPrint.resx">
+      <DependentUpon>OGPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEPrint.resx">
+      <DependentUpon>PEPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRPrint.resx">
+      <DependentUpon>PRPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSprint.resx">
+      <DependentUpon>PSprint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAPrint.resx">
+      <DependentUpon>RAPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RUPrint.resx">
+      <DependentUpon>RUPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIPrint.resx">
+      <DependentUpon>SIPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SKPrint.resx">
+      <DependentUpon>SKPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPPrint.resx">
+      <DependentUpon>SPPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VAPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VAPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WEPrint.resx">
+      <DependentUpon>WEPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WOPrint.resx">
+      <DependentUpon>WOPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="..\..\..\Program Files\Microsoft Visual Studio .NET 2003\Common7\Graphics\icons\Misc\MISC07a.ICO">
+      <Link>MISC07a.ICO</Link>
+    </Content>
+    <Content Include="ARTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ARTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="ATTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ATTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="BETemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>BETemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="CRTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>CRTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="ELTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ELTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="EVTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>EVTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="GC_AVATAR.ico" />
+    <Content Include="IOTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>IOTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="ITTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ITTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="LATemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>LATemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="NATemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>NATemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="NOTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>NOTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="OGTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>OGTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="PETemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PETemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="PRTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PRTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="PSTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PSTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="RATemp.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RUTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>RUTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="SITemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>SITemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="SKTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>SKTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="SPTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>SPTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="WETemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>WETemp.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="WOTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>WOTemp.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="app.config" />
+    <None Include="ARTemp.xsc">
+      <DependentUpon>ARTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ARTemp.xsx">
+      <DependentUpon>ARTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ATTemp.xsc">
+      <DependentUpon>ATTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ATTemp.xsx">
+      <DependentUpon>ATTemp.xsd</DependentUpon>
+    </None>
+    <None Include="BETemp.xsc">
+      <DependentUpon>BETemp.xsd</DependentUpon>
+    </None>
+    <None Include="BETemp.xsx">
+      <DependentUpon>BETemp.xsd</DependentUpon>
+    </None>
+    <None Include="CRTemp.xsc">
+      <DependentUpon>CRTemp.xsd</DependentUpon>
+    </None>
+    <None Include="CRTemp.xsx">
+      <DependentUpon>CRTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ELTemp.xsc">
+      <DependentUpon>ELTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ELTemp.xsx">
+      <DependentUpon>ELTemp.xsd</DependentUpon>
+    </None>
+    <None Include="EVTemp.xsc">
+      <DependentUpon>EVTemp.xsd</DependentUpon>
+    </None>
+    <None Include="EVTemp.xsx">
+      <DependentUpon>EVTemp.xsd</DependentUpon>
+    </None>
+    <None Include="IOTemp.xsc">
+      <DependentUpon>IOTemp.xsd</DependentUpon>
+    </None>
+    <None Include="IOTemp.xsx">
+      <DependentUpon>IOTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ITTemp.xsc">
+      <DependentUpon>ITTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ITTemp.xss">
+      <DependentUpon>ITTemp.xsd</DependentUpon>
+    </None>
+    <None Include="ITTemp.xsx">
+      <DependentUpon>ITTemp.xsd</DependentUpon>
+    </None>
+    <None Include="LATemp.xsc">
+      <DependentUpon>LATemp.xsd</DependentUpon>
+    </None>
+    <None Include="LATemp.xsx">
+      <DependentUpon>LATemp.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="NATemp.xsc">
+      <DependentUpon>NATemp.xsd</DependentUpon>
+    </None>
+    <None Include="NATemp.xsx">
+      <DependentUpon>NATemp.xsd</DependentUpon>
+    </None>
+    <None Include="NOTemp.xsc">
+      <DependentUpon>NOTemp.xsd</DependentUpon>
+    </None>
+    <None Include="NOTemp.xsx">
+      <DependentUpon>NOTemp.xsd</DependentUpon>
+    </None>
+    <None Include="OGTemp.xsc">
+      <DependentUpon>OGTemp.xsd</DependentUpon>
+    </None>
+    <None Include="OGTemp.xsx">
+      <DependentUpon>OGTemp.xsd</DependentUpon>
+    </None>
+    <None Include="PETemp.xsc">
+      <DependentUpon>PETemp.xsd</DependentUpon>
+    </None>
+    <None Include="PETemp.xsx">
+      <DependentUpon>PETemp.xsd</DependentUpon>
+    </None>
+    <None Include="PRTemp.xsc">
+      <DependentUpon>PRTemp.xsd</DependentUpon>
+    </None>
+    <None Include="PRTemp.xsx">
+      <DependentUpon>PRTemp.xsd</DependentUpon>
+    </None>
+    <None Include="PSTemp.xsc">
+      <DependentUpon>PSTemp.xsd</DependentUpon>
+    </None>
+    <None Include="PSTemp.xsx">
+      <DependentUpon>PSTemp.xsd</DependentUpon>
+    </None>
+    <None Include="RATemp.xsx">
+      <DependentUpon>RATemp.xsd</DependentUpon>
+    </None>
+    <None Include="RUTemp.xsc">
+      <DependentUpon>RUTemp.xsd</DependentUpon>
+    </None>
+    <None Include="RUTemp.xsx">
+      <DependentUpon>RUTemp.xsd</DependentUpon>
+    </None>
+    <None Include="SITemp.xsc">
+      <DependentUpon>SITemp.xsd</DependentUpon>
+    </None>
+    <None Include="SITemp.xss">
+      <DependentUpon>SITemp.xsd</DependentUpon>
+    </None>
+    <None Include="SITemp.xsx">
+      <DependentUpon>SITemp.xsd</DependentUpon>
+    </None>
+    <None Include="SKTemp.xsc">
+      <DependentUpon>SKTemp.xsd</DependentUpon>
+    </None>
+    <None Include="SKTemp.xss">
+      <DependentUpon>SKTemp.xsd</DependentUpon>
+    </None>
+    <None Include="SKTemp.xsx">
+      <DependentUpon>SKTemp.xsd</DependentUpon>
+    </None>
+    <None Include="SPTemp.xsc">
+      <DependentUpon>SPTemp.xsd</DependentUpon>
+    </None>
+    <None Include="SPTemp.xsx">
+      <DependentUpon>SPTemp.xsd</DependentUpon>
+    </None>
+    <None Include="VATemp.xsc">
+      <DependentUpon>VATemp.xsd</DependentUpon>
+    </None>
+    <None Include="VATemp.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VATemp.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="VATemp.xss">
+      <DependentUpon>VATemp.xsd</DependentUpon>
+    </None>
+    <None Include="WETemp.xsc">
+      <DependentUpon>WETemp.xsd</DependentUpon>
+    </None>
+    <None Include="WETemp.xsx">
+      <DependentUpon>WETemp.xsd</DependentUpon>
+    </None>
+    <None Include="WOTemp.xsc">
+      <DependentUpon>WOTemp.xsd</DependentUpon>
+    </None>
+    <None Include="WOTemp.xsx">
+      <DependentUpon>WOTemp.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

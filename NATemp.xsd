@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="NATemp" targetNamespace="http://tempuri.org/NATemp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/NATemp.xsd" xmlns:mstns="http://tempuri.org/NATemp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="NATemp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="na">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Číslo" type="xs:long" minOccurs="0" />
+							<xs:element name="Kontinent" type="xs:string" minOccurs="0" />
+							<xs:element name="Jméno" type="xs:string" minOccurs="0" />
+							<xs:element name="Hlměsto" type="xs:string" minOccurs="0" />
+							<xs:element name="Pocobyvatel" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Vláda" type="xs:string" minOccurs="0" />
+							<xs:element name="Vládce" type="xs:string" minOccurs="0" />
+							<xs:element name="Děti" type="xs:string" minOccurs="0" />
+							<xs:element name="Partner" type="xs:string" minOccurs="0" />
+							<xs:element name="Zastoupení" type="xs:string" minOccurs="0" />
+							<xs:element name="Rozdělení" type="xs:string" minOccurs="0" />
+							<xs:element name="Sousedé" type="xs:string" minOccurs="0" />
+							<xs:element name="Lords" type="xs:short" minOccurs="0" />
+							<xs:element name="Happy" type="xs:short" minOccurs="0" />
+							<xs:element name="Maglevel" type="xs:short" minOccurs="0" />
+							<xs:element name="Rich" type="xs:short" minOccurs="0" />
+							<xs:element name="Army" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Trainingix" type="xs:short" minOccurs="0" />
+							<xs:element name="Experienceix" type="xs:short" minOccurs="0" />
+							<xs:element name="Languag" type="xs:string" minOccurs="0" />
+							<xs:element name="Export" type="xs:string" minOccurs="0" />
+							<xs:element name="Poznámky" type="xs:string" minOccurs="0" />
+							<xs:element name="Importance" type="xs:short" minOccurs="0" />
+							<xs:element name="Side" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

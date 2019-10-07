@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ITTemp" targetNamespace="http://tempuri.org/ITTemp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ITTemp.xsd" xmlns:mstns="http://tempuri.org/ITTemp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ITTemp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="I">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:double"></xs:element>
+							<xs:element name="Item_name" type="xs:string" minOccurs="0" />
+							<xs:element name="Type" type="xs:string" minOccurs="0" />
+							<xs:element name="Looking" type="xs:string" minOccurs="0" />
+							<xs:element name="Daily_MG" type="xs:integer" minOccurs="0" />
+							<xs:element name="Special_powers" type="xs:string" minOccurs="0" />
+							<xs:element name="EP_SP" type="xs:integer" minOccurs="0" />
+							<xs:element name="EP_SP_type" type="xs:string" minOccurs="0" />
+							<xs:element name="MG_to_make" type="xs:integer" minOccurs="0" />
+							<xs:element name="Res_to_make" type="xs:integer" minOccurs="0" />
+							<xs:element name="Specs_to_make" type="xs:string" minOccurs="0" />
+							<xs:element name="Time_to_make" type="xs:string" minOccurs="0" />
+							<xs:element name="Rarity" type="xs:string" minOccurs="0" />
+							<xs:element name="App_price" type="xs:string" minOccurs="0" />
+							<xs:element name="Remarks" type="xs:string" minOccurs="0" />
+							<xs:element name="Alch" type="xs:string" minOccurs="0" />
+							<xs:element name="Spelly" type="xs:string" minOccurs="0" />
+							<xs:element name="Skilly" type="xs:string" minOccurs="0" />
+							<xs:element name="Resky" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
