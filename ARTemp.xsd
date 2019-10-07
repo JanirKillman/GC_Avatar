@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ARTemp" targetNamespace="http://tempuri.org/ARTemp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ARTemp.xsd" xmlns:mstns="http://tempuri.org/ARTemp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ARTemp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Ar">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:double" minOccurs="0" />
+							<xs:element name="Artifact" type="xs:string" minOccurs="0" />
+							<xs:element name="Also_known" type="xs:string" minOccurs="0" />
+							<xs:element name="Site" type="xs:string" minOccurs="0" />
+							<xs:element name="Property_of" type="xs:string" minOccurs="0" />
+							<xs:element name="Lookout" type="xs:string" minOccurs="0" />
+							<xs:element name="Powers" type="xs:string" minOccurs="0" />
+							<xs:element name="History" type="xs:string" minOccurs="0" />
+							<xs:element name="Spelly" type="xs:string" minOccurs="0" />
+							<xs:element name="Skilly" type="xs:string" minOccurs="0" />
+							<xs:element name="Resky" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="BETemp" targetNamespace="http://tempuri.org/BETemp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/BETemp.xsd" xmlns:mstns="http://tempuri.org/BETemp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="BETemp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="be">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="B_name" type="xs:string" minOccurs="0" />
+							<xs:element name="B_type" type="xs:string" minOccurs="0" />
+							<xs:element name="B_level" type="xs:string" minOccurs="0" />
+							<xs:element name="B_strength" type="xs:string" minOccurs="0" />
+							<xs:element name="B_attacks" type="xs:string" minOccurs="0" />
+							<xs:element name="B_dexterity" type="xs:string" minOccurs="0" />
+							<xs:element name="B_defences" type="xs:string" minOccurs="0" />
+							<xs:element name="B_specattacks" type="xs:string" minOccurs="0" />
+							<xs:element name="B_specdefences" type="xs:string" minOccurs="0" />
+							<xs:element name="B_size" type="xs:string" minOccurs="0" />
+							<xs:element name="B_fodl" type="xs:string" minOccurs="0" />
+							<xs:element name="B_resistances" type="xs:string" minOccurs="0" />
+							<xs:element name="B_IQ" type="xs:string" minOccurs="0" />
+							<xs:element name="B_wisdom" type="xs:string" minOccurs="0" />
+							<xs:element name="B_skill" type="xs:string" minOccurs="0" />
+							<xs:element name="B_podl" type="xs:string" minOccurs="0" />
+							<xs:element name="B_jed" type="xs:string" minOccurs="0" />
+							<xs:element name="B_MG" type="xs:string" minOccurs="0" />
+							<xs:element name="B_maxspelltype" type="xs:string" minOccurs="0" />
+							<xs:element name="B_mental" type="xs:string" minOccurs="0" />
+							<xs:element name="B_mentalskills" type="xs:string" minOccurs="0" />
+							<xs:element name="B_speed" type="xs:string" minOccurs="0" />
+							<xs:element name="B_behavior" type="xs:string" minOccurs="0" />
+							<xs:element name="B_experience" type="xs:string" minOccurs="0" />
+							<xs:element name="B_treasures" type="xs:string" minOccurs="0" />
+							<xs:element name="B_popis" type="xs:string" minOccurs="0" />
+							<xs:element name="B_datecreated" type="xs:date" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
