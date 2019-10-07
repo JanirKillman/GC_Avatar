@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="WETemp" targetNamespace="http://tempuri.org/WETemp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/WETemp.xsd" xmlns:mstns="http://tempuri.org/WETemp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="WETemp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="We">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:double" minOccurs="0" />
+							<xs:element name="Weap_name" type="xs:string" minOccurs="0" />
+							<xs:element name="Typeg" type="xs:string" minOccurs="0" />
+							<xs:element name="Templatex" type="xs:string" minOccurs="0" />
+							<xs:element name="Zas" type="xs:string" minOccurs="0" />
+							<xs:element name="Pru" type="xs:string" minOccurs="0" />
+							<xs:element name="Drt" type="xs:string" minOccurs="0" />
+							<xs:element name="Nic" type="xs:string" minOccurs="0" />
+							<xs:element name="OC" type="xs:string" minOccurs="0" />
+							<xs:element name="Ini" type="xs:string" minOccurs="0" />
+							<xs:element name="Spec_dmg" type="xs:string" minOccurs="0" />
+							<xs:element name="Delk" type="xs:string" minOccurs="0" />
+							<xs:element name="Silmin" type="xs:string" minOccurs="0" />
+							<xs:element name="Zas2" type="xs:string" minOccurs="0" />
+							<xs:element name="Zas3" type="xs:string" minOccurs="0" />
+							<xs:element name="Rang" type="xs:string" minOccurs="0" />
+							<xs:element name="Rang2" type="xs:string" minOccurs="0" />
+							<xs:element name="Rang3" type="xs:string" minOccurs="0" />
+							<xs:element name="Bod" type="xs:string" minOccurs="0" />
+							<xs:element name="Sek" type="xs:string" minOccurs="0" />
+							<xs:element name="Drc" type="xs:string" minOccurs="0" />
+							<xs:element name="Omg" type="xs:string" minOccurs="0" />
+							<xs:element name="Mag" type="xs:string" minOccurs="0" />
+							<xs:element name="HP" type="xs:string" minOccurs="0" />
+							<xs:element name="Weight" type="xs:string" minOccurs="0" />
+							<xs:element name="Aweight" type="xs:string" minOccurs="0" />
+							<xs:element name="Typed" type="xs:string" minOccurs="0" />
+							<xs:element name="Demon" type="xs:string" minOccurs="0" />
+							<xs:element name="Ench" type="xs:string" minOccurs="0" />
+							<xs:element name="Bless" type="xs:string" minOccurs="0" />
+							<xs:element name="Material" type="xs:string" minOccurs="0" />
+							<xs:element name="Looking" type="xs:string" minOccurs="0" />
+							<xs:element name="Spec_powers" type="xs:string" minOccurs="0" />
+							<xs:element name="Remarks" type="xs:string" minOccurs="0" />
+							<xs:element name="Daily_MG" type="xs:string" minOccurs="0" />
+							<xs:element name="EP_SP" type="xs:string" minOccurs="0" />
+							<xs:element name="EP_SP_type" type="xs:string" minOccurs="0" />
+							<xs:element name="Rarity" type="xs:string" minOccurs="0" />
+							<xs:element name="App_price" type="xs:string" minOccurs="0" />
+							<xs:element name="Spelly" type="xs:string" minOccurs="0" />
+							<xs:element name="Skilly" type="xs:string" minOccurs="0" />
+							<xs:element name="Resky" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

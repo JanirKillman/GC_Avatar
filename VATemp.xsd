@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VATemp" targetNamespace="http://tempuri.org/VATemp.xsd" xmlns:mstns="http://tempuri.org/VATemp.xsd" xmlns="http://tempuri.org/VATemp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VATemp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="VATemp" msprop:Generator_DataSetName="VATemp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="va" msprop:Generator_UserTableName="va" msprop:Generator_RowDeletedName="vaRowDeleted" msprop:Generator_TableClassName="vaDataTable" msprop:Generator_RowChangedName="vaRowChanged" msprop:Generator_RowClassName="vaRow" msprop:Generator_RowChangingName="vaRowChanging" msprop:Generator_RowEvArgName="vaRowChangeEvent" msprop:Generator_RowEvHandlerName="vaRowChangeEventHandler" msprop:Generator_TablePropName="va" msprop:Generator_TableVarName="tableva" msprop:Generator_RowDeletingName="vaRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Vantage" msprop:Generator_UserColumnName="Vantage" msprop:Generator_ColumnPropNameInRow="Vantage" msprop:Generator_ColumnVarNameInTable="columnVantage" msprop:Generator_ColumnPropNameInTable="VantageColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Adv" msprop:Generator_UserColumnName="Adv" msprop:Generator_ColumnPropNameInRow="Adv" msprop:Generator_ColumnVarNameInTable="columnAdv" msprop:Generator_ColumnPropNameInTable="AdvColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Pointcost" msprop:Generator_UserColumnName="Pointcost" msprop:Generator_ColumnPropNameInRow="Pointcost" msprop:Generator_ColumnVarNameInTable="columnPointcost" msprop:Generator_ColumnPropNameInTable="PointcostColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Popis" msprop:Generator_UserColumnName="Popis" msprop:Generator_ColumnPropNameInRow="Popis" msprop:Generator_ColumnVarNameInTable="columnPopis" msprop:Generator_ColumnPropNameInTable="PopisColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Actchar" msprop:Generator_UserColumnName="Actchar" msprop:Generator_ColumnPropNameInRow="Actchar" msprop:Generator_ColumnVarNameInTable="columnActchar" msprop:Generator_ColumnPropNameInTable="ActcharColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Multitake" msprop:Generator_UserColumnName="Multitake" msprop:Generator_ColumnPropNameInRow="Multitake" msprop:Generator_ColumnVarNameInTable="columnMultitake" msprop:Generator_ColumnPropNameInTable="MultitakeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

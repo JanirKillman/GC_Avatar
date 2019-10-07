@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SKTemp" targetNamespace="http://tempuri.org/SKTemp.xsd" xmlns:mstns="http://tempuri.org/SKTemp.xsd" xmlns="http://tempuri.org/SKTemp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SKTemp" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="SKTemp" msprop:Generator_DataSetName="SKTemp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sk" msprop:Generator_UserTableName="Sk" msprop:Generator_RowDeletedName="SkRowDeleted" msprop:Generator_TableClassName="SkDataTable" msprop:Generator_RowChangedName="SkRowChanged" msprop:Generator_RowClassName="SkRow" msprop:Generator_RowChangingName="SkRowChanging" msprop:Generator_RowEvArgName="SkRowChangeEvent" msprop:Generator_RowEvHandlerName="SkRowChangeEventHandler" msprop:Generator_TablePropName="Sk" msprop:Generator_TableVarName="tableSk" msprop:Generator_RowDeletingName="SkRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Skill" msprop:Generator_UserColumnName="Skill" msprop:Generator_ColumnPropNameInRow="Skill" msprop:Generator_ColumnVarNameInTable="columnSkill" msprop:Generator_ColumnPropNameInTable="SkillColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Difficulty" msprop:Generator_UserColumnName="Difficulty" msprop:Generator_ColumnPropNameInRow="Difficulty" msprop:Generator_ColumnVarNameInTable="columnDifficulty" msprop:Generator_ColumnPropNameInTable="DifficultyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Associated_atr" msprop:Generator_UserColumnName="Associated_atr" msprop:Generator_ColumnPropNameInRow="Associated_atr" msprop:Generator_ColumnVarNameInTable="columnAssociated_atr" msprop:Generator_ColumnPropNameInTable="Associated_atrColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Susage" msprop:Generator_UserColumnName="Susage" msprop:Generator_ColumnPropNameInRow="Susage" msprop:Generator_ColumnVarNameInTable="columnSusage" msprop:Generator_ColumnPropNameInTable="SusageColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

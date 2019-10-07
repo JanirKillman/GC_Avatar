@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PRTemp" targetNamespace="http://tempuri.org/PRTemp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/PRTemp.xsd" xmlns:mstns="http://tempuri.org/PRTemp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PRTemp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="pr">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:double" minOccurs="0" />
+							<xs:element name="Nazev" type="xs:string" minOccurs="0" />
+							<xs:element name="Typ" type="xs:string" minOccurs="0" />
+							<xs:element name="Podtyp" type="xs:string" minOccurs="0" />
+							<xs:element name="Rarita" type="xs:string" minOccurs="0" />
+							<xs:element name="Cena" type="xs:string" minOccurs="0" />
+							<xs:element name="Poznamky" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
