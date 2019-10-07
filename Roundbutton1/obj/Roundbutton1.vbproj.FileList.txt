@@ -1,0 +1,9 @@
+bin\Roundbutton1.dll
+bin\Roundbutton1.pdb
+bin\Roundbutton1.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Roundbutton1.RoundButton.resources
+obj\Debug\Roundbutton1.vbproj.GenerateResource.Cache
+obj\Debug\Roundbutton1.dll
+obj\Debug\Roundbutton1.xml
+obj\Debug\Roundbutton1.pdb
